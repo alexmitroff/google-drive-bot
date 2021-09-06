@@ -1,0 +1,6 @@
+# Official google api clients
+# Source:
+# https://developers.google.com/drive/api/v3/quickstart/python
+google-api-python-client==2.19.1
+google-auth-httplib2==0.1.0
+google-auth-oauthlib==0.4.6
