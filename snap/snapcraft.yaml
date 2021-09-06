@@ -1,0 +1,27 @@
+name: google-drive-bot
+base: core20
+version: '0.1'
+summary: Simplified google drive bot
+description: |
+  This are scripts to send files from our server to our Google Drive.
+architectures:
+  - build-on: [amd64]
+    run-on: [amd64]
+
+grade: stable
+confinement: strict
+
+parts:
+  python-telegram-bot:
+    # See 'snapcraft plugins'
+    plugin: python
+    python-version: python3
+    requirements: ['requirements.txt']
+    source: .
+
+apps:
+  send-or-update:
+    command: bin/send-or-update
+    plugs:
+      - network
+      - home
