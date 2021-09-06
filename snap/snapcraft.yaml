@@ -12,7 +12,7 @@ grade: stable
 confinement: strict
 
 parts:
-  python-telegram-bot:
+  google-drive-bot:
     # See 'snapcraft plugins'
     plugin: python
     python-version: python3
